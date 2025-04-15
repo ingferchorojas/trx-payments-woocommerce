@@ -35,8 +35,5 @@ add_action('enqueue_block_assets', function () {
             null,
             true
         );
-        wp_localize_script('trx-payment-gateway', 'trx_payment_data', [
-            'nonce' => wp_create_nonce('wp_rest')
-        ]);
     }
 });
